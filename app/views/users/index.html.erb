@@ -17,8 +17,8 @@
         <th scope="row"><%= user.name %></th>
         <th scope="row"><%= user.email %></th>
         <th scope="row"><%= link_to 'Show', user %></th>
-        <th scope="row"<%= link_to 'Edit', edit_user_path(user) %></th>
-        <th scope="row"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></th>
+        <th scope="row"><%= link_to 'Edit', edit_user_path(user) %></th>
+        <th scope="row"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Вы уверены?' } %></th>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,7 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+
+
+<%= link_to 'New User', new_user_path, class:"btn btn-outline-success btn-lg" %>
+
