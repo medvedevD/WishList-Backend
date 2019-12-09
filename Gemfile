@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.7'
 
+gem "high_voltage"
 gem 'bootstrap', '~> 4.4.1'
 gem 'popper_js', '~> 1.14.5'
 gem 'jquery-rails'
